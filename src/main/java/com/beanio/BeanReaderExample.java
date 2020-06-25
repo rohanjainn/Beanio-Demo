@@ -42,6 +42,7 @@ public class BeanReaderExample {
             Employee employee;
             while ((employee = (Employee) in.read()) != null) {
                System.out.println(employee.getFirstName());
+               System.out.println(employee.getSalary());
             }
             in.close();
         }
